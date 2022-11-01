@@ -21,7 +21,7 @@ API protocols for a potential social media application that allows users to crea
 ## Technologies
 
 <p float="left">
-<img src="https://www.kindpng.com/picc/m/67-678384_transparent-javascript-icon-png-png-download.png>" width="100" height="100">
+<img src="https://www.citypng.com/public/uploads/preview/js-javascript-round-logo-icon-png-11662226392lsrrajcm0y.png>" width="100" height="100">
 <img src="https://avatars.githubusercontent.com/u/7552965?s=280&v=4>" width="100" height="100">
 
 ---
