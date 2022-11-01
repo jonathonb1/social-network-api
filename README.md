@@ -34,6 +34,7 @@ https://github.com/jonathonb1/social-network-api
 ---
 
 ## Screenshot:
+<img width="1382" alt="Screen Shot 2022-11-01 at 2 51 56 PM" src="https://user-images.githubusercontent.com/102259821/199352564-7286488d-4342-48fd-bb6f-42529ce9c0b1.png">
 
 #
 
