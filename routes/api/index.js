@@ -1,4 +1,3 @@
-// Set requirements (Express Router)
 const router = require('express').Router();
 const usersRoutes = require('./user-routes');
 const thoughtsRoutes = require('./thought-routes');
