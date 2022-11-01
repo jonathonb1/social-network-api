@@ -21,7 +21,7 @@ API protocols for a potential social media application that allows users to crea
 ## Technologies
 
 <p float="left">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPfhgzat-AsyzkW5l3mjfyfj9drnDW2QvzuKcsJG5hZhvutKRWR3iS2EAjLDXPytHJOVo&usqp=CAU>" width="100" height="100">
+<img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/javascript_original_logo_icon_146455.png>" width="100" height="100">
 <img src="https://avatars.githubusercontent.com/u/7552965?s=280&v=4>" width="100" height="100">
 
 ---
