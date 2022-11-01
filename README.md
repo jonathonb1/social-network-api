@@ -21,8 +21,8 @@ API protocols for a potential social media application that allows users to crea
 ## Technologies
 
 <p float="left">
-<img src="https://symbols.getvecta.com/stencil_25/39_javascript.0ca26ec4ab.png>" width="100" height="100">
-<img src="https://cdn.iconscout.com/icon/free/png-256/mongodb-5-1175140.png>" width="100" height="100">
+<img src="https://mpng.subpng.com/20190627/ttx/kisspng-javascript-computer-icons-scalable-vector-graphics-list-of-javascript-enhancements-fandom-developers-5d145895b06253.7824611015616144857225.jpg>" width="100" height="100">
+<img src="https://1000logos.net/wp-content/uploads/2020/08/MongoDB-Logo-500x313.png>" width="100" height="100">
 <img src="https://avatars.githubusercontent.com/u/7552965?s=280&v=4>" width="100" height="100">
 
 ---
