@@ -1,17 +1,14 @@
 
-const {Thoughts, Users} = require('../models');
+const { Thoughts, Users } = require('../models');
 
 
 const thoughtsController = {
-
-
 
     // get all thoughts
     getAllThoughts(req,res) {
         Thoughts.find({})
         .populate({path: 'reactions', select: '-__v'})
         .select('-__v')
-        // .sort({_id: -1})
         .then(dbThoughtsData => res.json(dbThoughtsData))
         .catch(err => {
             console.log(err);

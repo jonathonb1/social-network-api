@@ -2,7 +2,7 @@
 const Users = require('./Users');
 
 // require thought model
-const Thoughts = require('./Thoughts')
+const Thoughts = require('./Thoughts');
 
 // export Modules:
-module.exports = { Users };
+module.exports = { Users, Thoughts };
