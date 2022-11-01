@@ -1,8 +1,24 @@
-
-const { Thoughts, Users } = require('../models');
+// Require Thoughts and Users Models
+const {Thoughts, Users} = require('../models');
 
 
 const thoughtsController = {
+
+    // new thought
+    createThoughts({params, body}, res) {
+        Thoughts.create(body)
+        .then(({_id}) => {
+            return Users.findOneAndUpdate({ _id: params.userId}, {$push: {thoughts: _id}}, {new: true});
+        })
+        .then(dbThoughtsData => {
+            if(!dbThoughtsData) {
+                res.status(404).json({message: 'No thoughts found with this id!'});
+                return;
+            }
+            res.json(dbThoughtsData)
+        })
+        .catch(err => res.json(err)); 
+    },
 
     // get all thoughts
     getAllThoughts(req,res) {
@@ -23,7 +39,7 @@ const thoughtsController = {
         .select('-__v')
         .then(dbThoughtsData => {
             if(!dbThoughtsData) {
-            res.status(404).json({ message: 'No thought found with this id!' });
+            res.status(404).json({message: 'No thoughts found with this id!'});
             return;
         }
         res.json(dbThoughtsData)
@@ -34,7 +50,7 @@ const thoughtsController = {
         });
     },
 
-        // Create a new thought
+        // add new thought
     createThoughts({params, body}, res) {
         Thoughts.create(body)
         .then(({_id}) => {
@@ -42,7 +58,7 @@ const thoughtsController = {
         })
         .then(dbThoughtsData => {
             if(!dbThoughtsData) {
-                res.status(404).json({ message: 'No thought found with this id!' });
+                res.status(404).json({message: 'No thoughts found with this id'});
                 return;
             }
             res.json(dbThoughtsData)
@@ -57,7 +73,7 @@ const thoughtsController = {
         .select('-___v')
         .then(dbThoughtsData => {
             if (!dbThoughtsData) {
-                res.status(404).json({ message: 'No thought found with this id!' });
+                res.status(404).json({message: 'no thoughts found with this id!'});
                 return;
             }
                 res.json(dbThoughtsData);
@@ -65,11 +81,12 @@ const thoughtsController = {
         .catch(err => res.json(err));
     },
 
+    // delete thought by id
     deleteThoughts({params}, res) {
         Thoughts.findOneAndDelete({_id: params.id})
         .then(dbThoughtsData => {
             if (!dbThoughtsData) {
-                res.status(404).json({ message: 'No thought found with this id!' });
+                res.status(404).json({message: 'no thoughts found with this id!'});
                 return;
             }
             res.json(dbThoughtsData);
@@ -84,7 +101,7 @@ const thoughtsController = {
         .select('-__v')
         .then(dbThoughtsData => {
         if (!dbThoughtsData) {
-            res.status(404).json({message: 'No thought found with this id!'});
+            res.status(404).json({message: 'No thoughts found with this id!'});
             return;
         }
         res.json(dbThoughtsData);
@@ -98,7 +115,7 @@ const thoughtsController = {
         Thoughts.findOneAndUpdate({_id: params.thoughtId}, {$pull: {reactions: {reactionId: params.reactionId}}}, {new : true})
         .then(dbThoughtsData => {
             if (!dbThoughtsData) {
-                res.status(404).json({message: 'No thought found with this id!'});
+                res.status(404).json({message: 'No thoughts found with this id!'});
                 return;
             }
             res.json(dbThoughtsData);

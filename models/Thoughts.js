@@ -1,4 +1,3 @@
-// Require Mongoos and Moment
 const { Schema, model, Types } = require('mongoose');
 
 const ReactionsSchema = new Schema(
@@ -18,7 +17,7 @@ const ReactionsSchema = new Schema(
     },
     createdAt: {
         type: Date,
-        default: Date.now
+        default: Date.now,
     }
     },
     {
@@ -55,10 +54,13 @@ const ThoughtsSchema = new Schema(
     }
 )
 
+// get total count of comments and replies on retrieval
 ThoughtsSchema.virtual('reactionCount').get(function() {
     return this.reactions.length;
 });
 
+
 const Thoughts = model('Thoughts', ThoughtsSchema);
+
 
 module.exports = Thoughts;

@@ -1,9 +1,6 @@
+// Set requirements (Express Router)
 const router = require('express').Router();
-
-// add prefix of `/users` to routes created in user-routes.js
 const usersRoutes = require('./user-routes');
-
-// add prefix of /thoughts to routes created in thought-routes.js
 const thoughtsRoutes = require('./thought-routes');
 
 
