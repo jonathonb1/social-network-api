@@ -21,7 +21,7 @@ API protocols for a potential social media application that allows users to crea
 ## Technologies
 
 <p float="left">
-<img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png>" width="100" height="100">
+<img src="https://symbols.getvecta.com/stencil_25/39_javascript.0ca26ec4ab.png>" width="100" height="100">
 <img src="https://cdn.iconscout.com/icon/free/png-256/mongodb-5-1175140.png>" width="100" height="100">
 <img src="https://avatars.githubusercontent.com/u/7552965?s=280&v=4>" width="100" height="100">
 
