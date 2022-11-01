@@ -22,7 +22,7 @@ API protocols for a potential social media application that allows users to crea
 
 <p float="left">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPfhgzat-AsyzkW5l3mjfyfj9drnDW2QvzuKcsJG5hZhvutKRWR3iS2EAjLDXPytHJOVo&usqp=CAU>" width="100" height="100">
-<img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mongodb-logo.png>" width="100" height="100">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBsJafmrmNJhyw1ViA0yIWHTTM52OTMus0iA&usqp=CAU>" width="100" height="100">
 <img src="https://avatars.githubusercontent.com/u/7552965?s=280&v=4>" width="100" height="100">
 
 ---
